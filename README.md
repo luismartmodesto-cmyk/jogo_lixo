@@ -34,6 +34,10 @@ python -m http.server 8000 --directory build\web
 
 Abra `http://localhost:8000`. O runtime Python e WebAssembly do Pygbag ainda é carregado de um CDN, então a primeira execução precisa de conexão com a internet.
 
+## Publicar no GitHub Pages
+
+O workflow em `.github/workflows/static.yml` gera a versão web e a publica automaticamente quando há um envio para a branch `main`. Na primeira publicação, confirme em **Settings > Pages** que a origem está configurada como **GitHub Actions**. O site ficará disponível em `https://luismartmodesto-cmyk.github.io/jogo_lixo/` após a conclusão do workflow.
+
 ## Testes
 
 ```powershell
